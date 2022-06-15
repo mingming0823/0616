@@ -1,0 +1,470 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display");
+*, *:before, *:after {
+  font-family: "Playfair Display", "微軟正黑體";
+  position: relative;
+}
+.btn {
+  coior:#fff;
+  border: solid 3px #a0455d;
+  padding: 12px 20px;
+  margin-right: 10px;
+}
+.me:hover {
+  coior:#fff;
+  background-color:#ff7168;}
+.button{
+text-decoration: none;
+text-transform: uppercase;
+margin-right: 5px;
+width: 8;
+letter-spacing: 2px;
+color:#fff;
+outline: 6px solid #5f0f40;
+background-color:#b1a7a6;
+padding: 20px 40px;
+position: relative;
+overflow: hidden;
+transition: color 1.5s;
+}
+.button:hover{
+  color: #660708;
+}
+}
+.left {
+  flex: 5; /*左邊有5等分*/
+}
+.right {
+  flex: 7; /*右邊有7等分*/
+}
+.left,
+.right {
+  padding: 15px;
+}
+.left {
+  padding-right: 50px; /*      */
+}
+.right {
+  padding-left: 50px;
+  padding-top: 150px;
+}
+html, body {
+  width: 100%;
+  height: 100%;
+  border-radius: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #2C2F36;
+  color: white;
+}
+
+.scene {
+  width: 850px;
+  height: 600px;
+  border-radius: 15px;
+  background: linear-gradient(#1D2B49, #1A45A0, #444554, #9b2226);
+  overflow: hidden;
+  background-size: 100% 300%;
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.3);
+}
+
+.lefttopText {
+  margin-left: 30px;
+  margin-top: 30px;
+}
+.lefttopText h1 {
+  font-size: 36px;
+  letter-spacing: 3px;
+  margin-top: 0;
+  font-weight: 300;
+}
+.lefttopText h5 {
+  font-size: 14px;
+  letter-spacing: 1px;
+  opacity: 0.6;
+  margin-bottom: 0;
+  font-weight: 300;
+}
+.lefttopText p {
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 2px;
+  opacity: 0.6;
+}
+.lefttopText .blueblock {
+  width: 3px;
+  height: 05px;
+  border-radius: 0;
+  background-color: #7cb1ff;
+}
+
+.building {
+  position: absolute;
+  display: flex;
+  left: 30;
+  bottom: 0;
+  transform: scale(0.8);
+}
+
+[class^=house] {
+  display: flex;
+  left: 30;
+  bottom: 0;
+}
+.house2 {
+  width: 400px;
+  height: 20px;
+  left:-50px;
+  border-radius: 45;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fafaf5;
+  z-index: 0;
+}
+.house3 {
+  width: 120px;
+  height: 420px;
+  left:-300px;
+  border-radius: 45;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fafaf5;
+  z-index: 0;
+}
+.house3 .wall {
+  flex: 1;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+.house3 .wall .window {
+  width: 24px;
+  height: 50px;
+  border-radius: 12px 12px 0 0;
+  margin-top: 30px;
+  background-color: #2C2F36;
+}
+.house3 .wall:nth-child(1) {
+  background-color: #fafaf5;
+  flex: 10;
+}
+.house3 .wall:nth-child(1) .window {
+  box-shadow: inset 8px 2px #7cb1ff;
+}
+.house3 .wall:nth-child(1):before {
+  z-index: 1;
+}
+.house3 .wall:nth-child(2) {
+  background-color: #e3e2cf;
+  flex: 14;
+}
+.house3 .wall:nth-child(2) .window {
+  box-shadow: inset 0px 2px #7cb1ff;
+}
+.house3 .wall:nth-child(2):before {
+  z-index: 2;
+}
+.house3 .wall:nth-child(3) {
+  background-color: #bebdaf;
+  flex: 10;
+}
+.house3 .wall:nth-child(3) .window {
+  box-shadow: inset -8px 2px #7cb1ff;
+}
+.house3 .wall:nth-child(3):before {
+  z-index: 1;
+}
+.house3 .wall:before {
+  content: "";
+  display: block;
+  width: 105%;
+  height: 20px;
+  border-radius: 0;
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: inherit;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+.house3 .roof {
+  width: 80px;
+  height: 80px;
+  border-radius: 80px 80px 0 0;
+  position: absolute;
+  top: -50px;
+  right: 180px;
+  background: linear-gradient(180deg, #000, #fff);
+}
+.house3 .roof2 {
+  width: 80px;
+  height: 80px;
+  border-radius: 80px 80px 0 0;
+  position: absolute;
+  top: 70px;
+  right: -400px;
+  background: linear-gradient(180deg, #000, #fff);
+}
+.house3 .roof2 .rooftop2 {
+  width: 28px;
+  height: 14px;
+  border-radius: 14px 14px 0 0;
+  position: absolute;
+  left: 50%;
+  top: -14px;
+  transform: translateX(-50%);
+  background-color: #fff;
+}
+.house3 .roof2 .cross2 {
+  width: 4px;
+  height: 30px;
+  border-radius: 0;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 10px;
+  background-color: #fff;
+}
+.house3 .roof .rooftop {
+  width: 28px;
+  height: 14px;
+  border-radius: 14px 14px 0 0;
+  position: absolute;
+  left: 50%;
+  top: -14px;
+  transform: translateX(-50%);
+  background-color: #fff;
+}
+.house3 .roof .cross {
+  width: 4px;
+  height: 30px;
+  border-radius: 0;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 10px;
+  background-color: #fff;
+}
+.house3 .roof .cross:before {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 4px;
+  border-radius: 0;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 15px;
+  background-color: #fff;
+}
+.house3 .roof2 .cross2:before {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 4px;
+  border-radius: 0;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 15px;
+  background-color: #fff;
+}
+
+.allstars {
+  width: 100%;
+  height: 100%;
+  border-radius: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+@-webkit-keyframes falling {
+  0%, 100% {
+    opacity: 0;
+  }
+  70% {
+    opacity: 1;
+  }
+  0% {
+    transform: translate(100px, 0);
+  }
+  100% {
+    transform: translate(0px, 200px);
+  }
+}
+@keyframes falling {
+  0%, 100% {
+    opacity: 0;
+  }
+  70% {
+    opacity: 1;
+  }
+  0% {
+    transform: translate(100px, 0);
+  }
+  100% {
+    transform: translate(0px, 200px);
+  }
+}
+
+
+
+.remind {
+  opacity: 0.2;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+.dayText {
+  display: none;
+}
+
+.sun, .moon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  position: absolute;
+  left: 250px;
+  top: 100px;
+}
+
+.sun {
+  background-color: #ffdd38;
+   border-radius: 80px 60px 80 0;
+  box-shadow: 5px 0px 20px rgba(255, 221, 56, 0.5);
+  top: 400px;
+  opacity: 0;
+}
+.sun.circle {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #534d4d;
+  margin: 4px;
+  margin-left: 10px;
+}
+.moon {
+  -webkit-animation: moonAppear 2s both;
+          animation: moonAppear 2s both;
+}
+
+@-webkit-keyframes moonAppear {
+  0% {
+    box-shadow: inset 0px 0px rgba(255, 255, 255, 0.9);
+  }
+  100% {
+    box-shadow: inset 10px -10px rgba(255, 255, 255, 0.9);
+  }
+}
+
+@keyframes moonAppear {
+  0% {
+    box-shadow: inset 0px 0px rgba(255, 255, 255, 0.9);
+  }
+  100% {
+    box-shadow: inset 10px -10px rgba(255, 255, 255, 0.9);
+  }
+}
+h1, h5, p, .moon, .sun, .scene, .allstars, .blueblock, .building {
+  transition: 3s;
+}
+
+input:checked + .scene {
+  background-position: 0 100%;
+}
+input:checked + .scene .nightText {
+  display: none;
+}
+input:checked + .scene .dayText {
+  display: block;
+}
+input:checked + .scene .allstars {
+  opacity: 0;
+}
+input:checked + .scene h1, input:checked + .scene h5, input:checked + .scene p {
+  color: #222;
+}
+input:checked + .scene .bulding {
+  filter: brightness(105%);
+}
+input:checked + .scene .moon {
+  top: -100px;
+  opacity: 0;
+}
+input:checked + .scene .sun {
+  top: 100px;
+  opacity: 1;
+}
+input:checked + .scene .blueblock {
+  background-color: #fff;
+}
+
+input {
+  display: none;
+}
+body{
+  display: flex;
+  background: #000;
+  min-height: 97vh;
+  align-items: center;
+justify-content: center;
+  font-family: 'Lobster', cursive;
+}
+.content {
+  float:right;
+}
+.content h2 {
+  color: #fff;
+  font-size: 8em;
+  position: absolute;
+  letter-spacing: 5px;
+  transform: translate(2%, -100%);
+}
+.content h2:nth-child(1) {
+  color: transparent;
+  -webkit-text-stroke: 2px rgb(166, 88, 255);
+}
+.content h2:nth-child(2) {
+  color: orange;
+  animation: animate 2s ease-in-out infinite;
+}
+@keyframes animate {
+    0%,
+    50% {
+      clip-path: polygon(
+          0% 45%,
+          16% 44%,
+          33% 50%,
+          54% 60%,
+          70% 61%,
+          84% 59%,
+          100% 52%,
+          100% 100%,
+          0% 100%
+     
+      );
+    100% {
+      clip-path: polygon(
+          0% 45%,
+          16% 44%,
+          33% 50%,
+          60% 60%,
+          70% 61%,
+          84% 59%,
+          90% 52%,
+          100% 100%,
+          0% 100%
+     );
+  }
+}
+hr {
+  border: none; /*取消hr的預設設定*/
+  border-bottom: solid 4px #fff; /*只顯示底部線條大小*/
+  width: 40%; /*只顯示40%的線條*/
+  margin-left: 0; /*讓div離左邊距離為0px*/
+}
